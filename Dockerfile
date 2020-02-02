@@ -1,7 +1,11 @@
 # Base docker image
 FROM debian:stable
 
-LABEL maintainer="Philipp Winter <phw@torproject.org>"
+# This the original maintainer
+# LABEL maintainer="Philipp Winter <phw@torproject.org>"
+LABEL maintainer="ueni, ueniueni"
+
+COPY qemu-arm-static /usr/bin
 
 # Install dependencies to add Tor's repository.
 RUN apt-get update && apt-get install -y \
