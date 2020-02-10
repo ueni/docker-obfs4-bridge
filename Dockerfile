@@ -1,5 +1,5 @@
 # Base docker image
-FROM debian:stable
+FROM --platform="linux/arm" debian:stable
 
 # This the original maintainer
 # LABEL maintainer="Philipp Winter <phw@torproject.org>"
