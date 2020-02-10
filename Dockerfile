@@ -12,6 +12,7 @@ COPY qemu-arm-static /usr/bin
 
 # Install dependencies to add Tor's repository.
 RUN apt-get update && apt-get install -y \
+    libcap2-bin \
     curl \
     gpg \
     gpg-agent \
