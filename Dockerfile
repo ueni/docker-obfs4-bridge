@@ -1,5 +1,8 @@
 # Base docker image
-FROM --platform="linux/arm" debian:stable
+# platform -flag isn't supported by docker hub
+# FROM --platform="linux/arm" debian:stable-slim
+
+FROM arm32v7/debian:stable-slim
 
 # This the original maintainer
 # LABEL maintainer="Philipp Winter <phw@torproject.org>"
