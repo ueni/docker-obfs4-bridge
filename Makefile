@@ -1,4 +1,4 @@
-IMAGE=phwinter/obfs4-bridge
+IMAGE=ueniueni/arm32v7.obfs4-bridge
 
 .PHONY: tag
 tag:
